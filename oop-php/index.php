@@ -1,7 +1,6 @@
-
 <?php
-
-include 'includes/autoloader.inc.php';
+    declare(strict_types = 1);
+    include 'includes/autoloader.inc.php';
 
 ?>
 
@@ -23,6 +22,17 @@ include 'includes/autoloader.inc.php';
     $man1 = new Person\Person("Rakibul", "Black", "22");
     echo $man1->getDA();
     
+    // Step New 
+    try{
+        $man1->setName(2);
+        echo $man1->getName();
+    }
+    catch (TypeError $e) {
+        echo "Error!: " . $e->getMessage();
+    }
+    
+    
+
     ?>
 
 </body>

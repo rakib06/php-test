@@ -17,10 +17,10 @@ include 'includes/autoloader.inc.php';
     
     <?php
     
-    echo Person::$drinkingAge;
-    Person::setDrinkingAge(18);
-    echo Person::$drinkingAge;
-    $man1 = new Person("Rakibul", "Black", "22");
+    //echo Person::$drinkingAge;
+    //Person::setDrinkingAge(18);
+    //echo Person::$drinkingAge;
+    $man1 = new Person\Person("Rakibul", "Black", "22");
     echo $man1->getDA();
     
     ?>

@@ -1,5 +1,7 @@
 <?php
 
+namespace Person;
+
 class Person {
     // Properties
     private $name;

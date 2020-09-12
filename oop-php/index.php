@@ -16,7 +16,7 @@
     */
     
     // step 2
-
+/*
     include "includes/man.inc.php";
     // $man1 = new Man();
     $man1 = new Man("Rakibul", "Black", "22");
@@ -24,7 +24,12 @@
     echo $man1->eyeColor;
     $man1->setName("Hasan");
     echo  $man1->getName();
-
+    */
+    // Step 3
+    include "includes/newClass.inc.php";
+    $object = new NewClass;
+    // unset($object); // destroyed the object
+    echo $object->getProperty();
 
     ?>
 
